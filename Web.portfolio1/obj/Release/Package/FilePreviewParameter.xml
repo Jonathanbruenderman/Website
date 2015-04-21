@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="JonathanBruenderman" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\jbruend\.INSPINC\\Desktop\\Web\.portfolio1\\Web\.portfolio1\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\jbruend\.INSPINC\\Desktop\\Web\.portfolio1\\Web\.portfolio1\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:zx4ttu1ooe.database.windows.net,1433;Initial Catalog=JonathanBruenderman_db;User Id=RecipeDB@zx4ttu1ooe;Password=brokensword=99" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\jbruend\.INSPINC\\Desktop\\Web\.portfolio1\\Web\.portfolio1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="RecipeDBContext-Web.config Connection String" description="" value="Data Source=tcp:zx4ttu1ooe.database.windows.net,1433;Initial Catalog=JonathanBruenderman_db;User Id=RecipeDB@zx4ttu1ooe;Password=brokensword=99" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\jbruend\.INSPINC\\Desktop\\Web\.portfolio1\\Web\.portfolio1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='RecipeDBContext']/@connectionString" />
+  </parameter>
+</parameters>
