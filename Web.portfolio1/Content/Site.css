@@ -85,7 +85,17 @@
     background-color: #fff; 
     margin: 0 auto;
     padding: 20px; 
+    margin-left: 20%;
+    margin-right: 20%;
 }
+
+@media (max-width: 800px) {
+    #center {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
 
 #nav-header {
     width: 100%;
