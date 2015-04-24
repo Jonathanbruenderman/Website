@@ -1,10 +1,5 @@
-﻿body {
-    height: 100%;
-}
-
-.mainRegion {
+﻿.mainRegion {
     width: 100%;
-    height: 100%; 
     background: rgb(40,52,59); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(40,52,59,1) 18%, rgba(72,89,107,1) 50%, rgba(40,52,59,1) 88%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(18%,rgba(40,52,59,1)), color-stop(50%,rgba(72,89,107,1)), color-stop(88%,rgba(40,52,59,1))); /* Chrome,Safari4+ */
@@ -21,8 +16,6 @@
     clear: both;
     display: none;
 }
-
-
 
 #menu li {
     text-align: center;
@@ -67,7 +60,6 @@
 }
 
 #wrapper {
-    height: 100vh;
     width: 100%;     
     background: rgb(24,31,35); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(24,31,35,1) 10%, rgba(130,140,149,1) 51%, rgba(130,140,149,1) 51%, rgba(130,140,149,1) 51%, rgba(130,140,149,1) 51%, rgba(24,31,35,1) 90%); /* FF3.6+ */
@@ -81,7 +73,6 @@
 
 #center {
     width: auto; 
-    height: 100%;
     background-color: #fff; 
     margin: 0 auto;
     padding: 20px; 
@@ -133,7 +124,7 @@
 
 #profile {
     width: 600px;
-    height: 100%; 
+    height: 100vh; 
     background-color: transparent; 
     margin: auto;
     align-self: center;
