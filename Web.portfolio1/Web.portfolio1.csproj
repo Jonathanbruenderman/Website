@@ -143,7 +143,6 @@
     <Content Include="Views\Home\Projects.cshtml" />
     <Content Include="Views\Home\Apps.cshtml" />
     <Content Include="Views\Home\ContactMe.cshtml" />
-    <Content Include="Views\Home\PastJobs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
