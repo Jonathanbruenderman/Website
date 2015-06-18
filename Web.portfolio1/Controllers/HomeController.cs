@@ -35,7 +35,7 @@ namespace Web.portfolio1.Controllers
         {
             return View();
         }
-        public ActionResult PastJobs()
+        public ActionResult Links()
         {
             return View();
         }
