@@ -176,7 +176,6 @@
 #links_left, #links_center, #links_right {
     float: left; 
     width: 33.3%;
-    height: 100vh;
     margin-top: 25px;
 }
 
@@ -218,6 +217,23 @@
 }
 
 #page_links_left, #page_links_center, #page_links_right a {
-    color: #fff; 
     font-size: 18px; 
+}
+
+@media (max-width: 430px) {
+    #links_left, #links_center, #links_right {
+        float: none;
+        width: 80%;
+        height: 200px;
+        margin: 42px auto 0;
+    }
+    #page_links_left, #page_links_center, #page_links_right a {
+        font-size: 24px; 
+    }
+    #title_left, #title_center, #title_right p {
+        font-size: 30px; 
+    }
+    #name_links {
+        width: auto;
+    }
 }
