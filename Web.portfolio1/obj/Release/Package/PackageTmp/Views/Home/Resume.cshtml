@@ -1,23 +1,31 @@
 ﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 <div class="mainRegion">
     <header id="nav-header">
-        <div id="menu-image">
-            <img src="~/Content/img/menu.jpg" />
-        </div>
         <div id="name">
             <h2> Jonathan Bruenderman</h2>
         </div>
-        <div id="menu-image1">
-            <img src="~/Content/img/menu.jpg" />
+        <div id="menu-mobile-image1">
+            <img src="~/Content/img/menu-mobile.jpg" />
         </div>
 
         <nav id="menu">
             <ul>
+                <li onclick="location.href='/Home'"><a href="/Home"> Home </a></li>
+                <li onclick="location.href='/Home/Resume'"><a href="/Home/Resume"> Resume </a></li>
+                <li onclick="location.href='/Home/Links'"><a href="/Home/Links"> Awesome Links </a></li>
+                <li onclick="location.href='/Home/Projects'"><a href="/Home/Projects"> Projects </a></li>
+                <li onclick="location.href='/Home/Apps'"><a href="/Recipes/Apps"> Apps </a> </li>
+                <li onclick="location.href='/Home/ContactMe'"><a href="/Home/ContactMe"> Contact Me </a></li>
+            </ul>
+        </nav>
+
+        <nav id="menu-mobile">
+            <ul>
                 <li onclick="location.href= '/Home'"><a href="/Home"> Home </a></li>
                 <li onclick="location.href = '/Home/Resume'"><a href="/Home/Resume"> Resume </a></li>
-                <li onclick="location.href= '/Home/Links'"><a href="/Home/Links"> Awesome Links </li>
+                <li onclick="location.href= '/Home/Links'"><a href="/Home/Links"> Awesome Links </a></li>
                 <li onclick="location.href = '/Home/Projects'"><a href="/Home/Projects"> Projects </a></li>
-                <li onclick="location.href = '/Home/Apps'"><a href="/Recipes/Index"> Apps </a> </li>
+                <li onclick="location.href = '/Home/Apps'"><a href="/Recipes/Apps"> Apps </a> </li>
                 <li onclick="location.href = '/Home/ContactMe'"><a href="/Home/ContactMe"> Contact Me </a></li>
             </ul>
         </nav>
@@ -53,61 +61,56 @@
             <p>
                 <b>Projects</b>
 
-                <ul style="list-style-type:disc">
-                    <li> <b>Blackjack server/client: </b></li>
-                    <ul style="list-style-type: disc">
-                        <li> Written in Python </li>
-                        <li> Created Server and client </li>
-                        <li> Server had 5 seats for playing and unlimited clients access(putting them in a lobby) </li>
-                        <li> Implemented chat system between clients </li>
-                    </ul>
-                    <br />
-                    <li> <b>Web based code tester for 100 level CS code:</b> </li>
-                    <ul style="list-style-type: disc">
-                        <li> Back end </li>
-                        <ul style="list-style-type: disc">
-                            <li> Python using Bottle </li>
-                            <li> JSON files for data storage and retrieval </li>
-                        </ul>
-                        <li> Front end </li>
-                        <ul style="list-style-type: disc">
-                            <li> HTML5 using Handlebars templates </li>
-                            <li> CSS using Bootstrap 3 </li>
-                            <li> JavaScript using Backbone </li>
-                        </ul>
-                    </ul>
-                    <br />
-                    <li> <b>DVD rental application:</b> </li>
-                    <ul style="list-style-type: disc">
-                        <li>Written in C#</li>
-                        <li>GUI interface with Visual Studio</li>
-                        <li>Uses simple .txt file to save and load data</li>
-                        <li>Windows Form application</li>
+                <ul>
 
-                    </ul>
-                    <br />
-                    <li> <b>Unix shell: </b></li>
-                    <ul style="list-style-type: disc">
-                        <li>Written in C</li>
-                        <li>Implemented basic commands</li>
-                        <ul>
-                            <li>Change Directory/file</li>
-                            <li>Create Directory/file</li>
-                            <li>List Directories/files</li>
-                            <li>Etc</li>
-                        </ul>
+                <li> <b>Blackjack server/client: </b></li>
+                <li> Written in Python </li>
+                <li> Created Server and client </li>
+                <li> Server had 5 seats for playing and unlimited clients access(putting them in a lobby) </li>
+                <li> Implemented chat system between clients </li>
+                <br />
+                <li> <b>Web based code tester for 100 level CS code:</b> </li>
+                <li> Back end </li>
+                <li> Python using Bottle </li>
+                <li> JSON files for data storage and retrieval </li>
+                <li> Front end </li>
+                <li> HTML5 using Handlebars templates </li>
+                <li> CSS using Bootstrap 3 </li>
+                <li> JavaScript using Backbone </li>
 
-                    </ul>
-                    <br />
-                    <li> <b>Artificial Intelligence Tic Tac Toe Game:</b> </li>
-                    <ul style="list-style-type: disc">
-                        <li>Written in C</li>
-                        <li>Basic Gui used on Unix shell</li>
-                        <li>1 or 2 player</li>
-                        <li>1 player plays against AI(hint:Unwinnable if AI goes first)</li>
 
-                    </ul>
+                <br />
+                <li> <b>DVD rental application:</b> </li>
+
+                <li>Written in C#</li>
+                <li>GUI interface with Visual Studio</li>
+                <li>Uses simple .txt file to save and load data</li>
+                <li>Windows Form application</li>
+
+
+                <br />
+                <li> <b>Unix shell: </b></li>
+
+                <li>Written in C</li>
+                <li>Implemented basic commands</li>
+
+                <li>Change Directory/file</li>
+                <li>Create Directory/file</li>
+                <li>List Directories/files</li>
+                <li>Etc</li>
+
+
+
+                <br />
+                <li> <b>Artificial Intelligence Tic Tac Toe Game:</b> </li>
+
+                <li>Written in C</li>
+                <li>Basic Gui used on Unix shell</li>
+                <li>1 or 2 player</li>
+                <li>1 player plays against AI(hint:Unwinnable if AI goes first)</li>
+
                 </ul>
+
             </p>
 
             <hr />
@@ -118,4 +121,4 @@
 
 </div>
 
-<script src="~/Content/Scripts/Menubar.js"></script>
+<script src="~/Content/Scripts/menubar.js"></script>

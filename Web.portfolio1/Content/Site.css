@@ -1,5 +1,6 @@
 ﻿.mainRegion {
     width: 100%;
+    height: 100%;
     background: rgb(40, 52, 59); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(40, 52, 59, 1) 18%, rgba(72, 89, 107, 1) 50%, rgba(40, 52, 59, 1) 88%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(18%, rgba(40, 52, 59, 1)), color-stop(50%, rgba(72, 89, 107, 1)), color-stop(88%, rgba(40, 52, 59, 1))); /* Chrome,Safari4+ */
@@ -10,7 +11,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28343b', endColorstr='#28343b', GradientType=0);
 }
 
-#menu {
+#menu-mobile {
     width: 414px;
     float: left;
     clear: both;
@@ -19,7 +20,40 @@
     margin-top: 0;
 }
 
+#menu {
+    width: 100%;
+    border-right: thin solid rgba(130, 140, 149, 1); 
+    background-color: #000000;
+    float: left;
+    margin: 0 auto;
+}
+
 #menu li {
+    height: 40px;
+    width: 150px; 
+    display: inline-block;
+    padding-top: 8px;
+    border-left: solid rgba(130, 140, 149, 1) 1px;
+    border-right: solid rgba(130, 140, 149, 1) 1px;
+}
+
+#menu li:hover {
+    background-color: rgb(40, 52, 59);
+}
+
+#menu ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#menu li a {
+    padding-top: 10px;
+    font-size: 18px; 
+    color: #fff;
+}
+
+
+#menu-mobile li {
     text-align: center;
     display: block;
     padding: 5px 30px;
@@ -33,7 +67,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#181f23', endColorstr='#181f23', GradientType=0);
 }
 
-#menu li:hover {
+#menu-mobile li:hover {
     background: rgb(130, 140, 149); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(130, 140, 149, 1) 10%, rgba(24, 31, 35, 1) 50%, rgba(24, 31, 35, 1) 50%, rgba(130, 140, 149, 1) 51%, rgba(130, 140, 149, 1) 51%, rgba(24, 31, 35, 1) 51%, rgba(130, 140, 149, 1) 90%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(130, 140, 149, 1)), color-stop(50%, rgba(24, 31, 35, 1)), color-stop(50%, rgba(24, 31, 35, 1)), color-stop(51%, rgba(130, 140, 149, 1)), color-stop(51%, rgba(130, 140, 149, 1)), color-stop(51%, rgba(24, 31, 35, 1)), color-stop(90%, rgba(130, 140, 149, 1))); /* Chrome,Safari4+ */
@@ -44,12 +78,12 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#828c95', endColorstr='#828c95', GradientType=0);
 }
 
-#menu ul {
+#menu-mobile ul {
     padding: 0;
     margin-bottom: 0;
 }
 
-#menu a {
+#menu-mobile a {
     text-align: center;
     width: 33%;
     font-family: Arial;
@@ -80,6 +114,7 @@
     padding: 20px;
     margin-left: 20%;
     margin-right: 20%;
+    padding-top: 50px;
 }
 
 @media (max-width: 800px) {
@@ -115,14 +150,14 @@
     position: relative;   
 }
 
-#menu-image img {
+#menu-mobile-image img {
     float: left;
     height: 35px;
     width: 40px;
     clear: both;
 }
 
-#menu-image1 img {
+#menu-mobile-image1 img {
     float: left;
     height: 40px;
     width: 40px;
@@ -140,9 +175,9 @@
 @media (max-width: 430px) {
     #nav-header h2 { font-size: 18px; }
 
-    #menu-image img { display: none; }
+    #menu-mobile-image img { display: none; }
 
-    #menu-image1 img {
+    #menu-mobile-image1 img {
         width: 100%;
         display: block;
     }
@@ -151,7 +186,7 @@
 }
 
 @media (max-width: 430px) {
-    #menu { width: 100%; }
+    #menu-mobile { width: 100%; }
 }
 
 #profile p {
@@ -164,11 +199,11 @@
 }
 
 @media (max-width: 430px) {
-    #menu-image1 img{
+    #menu-mobile-image1 img{
         position: absolute; 
         z-index: 1; 
     }
-    #menu {
+    #menu-mobile {
         margin-top: 40px; 
     }
 }
@@ -177,11 +212,11 @@
     float: left; 
     width: 33.3%;
     margin-top: 25px;
+    height: auto;
 }
 
 #links {
     width: 100%;
-    height: 100vh;
     background-color: transparent;
     align-self: center;
 }
@@ -220,20 +255,29 @@
     font-size: 18px; 
 }
 
+body {
+    height: 100vh;
+}
+
 @media (max-width: 430px) {
     #links_left, #links_center, #links_right {
         float: none;
         width: 80%;
-        height: 200px;
         margin: 42px auto 0;
     }
     #page_links_left, #page_links_center, #page_links_right a {
         font-size: 24px; 
     }
     #title_left, #title_center, #title_right p {
-        font-size: 30px; 
+        font-size: 26px; 
     }
     #name_links {
         width: auto;
+    }
+    #wrapper, .mainRegion {
+        height: auto;
+    }
+    #menu {
+        display: none;
     }
 }

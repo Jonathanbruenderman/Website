@@ -723,12 +723,12 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     var $parent  = getParent($this)
     var isActive = $parent.hasClass('open')
 
-    clearMenus()
+    clearmenu-mobiles()
 
     if (!isActive) {
       if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
         // if mobile we we use a backdrop because click events don't delegate
-        $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearMenus)
+        $('<div class="dropdown-backdrop"/>').insertAfter($(this)).on('click', clearmenu-mobiles)
       }
 
       $parent.trigger(e = $.Event('show.bs.dropdown'))
@@ -763,7 +763,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
       return $this.click()
     }
 
-    var $items = $('[role=menu] li:not(.divider):visible a', $parent)
+    var $items = $('[role=menu-mobile] li:not(.divider):visible a', $parent)
 
     if (!$items.length) return
 
@@ -776,7 +776,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     $items.eq(index).focus()
   }
 
-  function clearMenus() {
+  function clearmenu-mobiles() {
     $(backdrop).remove()
     $(toggle).each(function (e) {
       var $parent = getParent($(this))
@@ -832,10 +832,10 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
   // ===================================
 
   $(document)
-    .on('click.bs.dropdown.data-api', clearMenus)
+    .on('click.bs.dropdown.data-api', clearmenu-mobiles)
     .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
     .on('click.bs.dropdown.data-api'  , toggle, Dropdown.prototype.toggle)
-    .on('keydown.bs.dropdown.data-api', toggle + ', [role=menu]' , Dropdown.prototype.keydown)
+    .on('keydown.bs.dropdown.data-api', toggle + ', [role=menu-mobile]' , Dropdown.prototype.keydown)
 
 }(window.jQuery);
 
@@ -1700,7 +1700,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
       .parents('li')
       .addClass('active')
 
-    if (active.parent('.dropdown-menu').length)  {
+    if (active.parent('.dropdown-menu-mobile').length)  {
       active = active
         .closest('li.dropdown')
         .addClass('active')
@@ -1781,7 +1781,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
 
   Tab.prototype.show = function () {
     var $this    = this.element
-    var $ul      = $this.closest('ul:not(.dropdown-menu)')
+    var $ul      = $this.closest('ul:not(.dropdown-menu-mobile)')
     var selector = $this.attr('data-target')
 
     if (!selector) {
@@ -1820,7 +1820,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
     function next() {
       $active
         .removeClass('active')
-        .find('> .dropdown-menu > .active')
+        .find('> .dropdown-menu-mobile > .active')
         .removeClass('active')
 
       element.addClass('active')
@@ -1832,7 +1832,7 @@ if (!jQuery) { throw new Error("Bootstrap requires jQuery") }
         element.removeClass('fade')
       }
 
-      if (element.parent('.dropdown-menu')) {
+      if (element.parent('.dropdown-menu-mobile')) {
         element.closest('li.dropdown').addClass('active')
       }
 

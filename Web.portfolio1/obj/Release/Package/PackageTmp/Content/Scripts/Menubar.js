@@ -1,10 +1,10 @@
 ﻿
 $(document).ready(function () {
-    $('#menu-image1').click(function () {
-        $('#menu').stop().slideToggle(270);
+    $('#menu-mobile-image1').click(function () {
+        $('#menu-mobile').stop().slideToggle(270);
     });
-    $('#menu-image').click(function () {
-        $('#menu').stop().slideToggle(270);
+    $('#menu-mobile-image').click(function () {
+        $('#menu-mobile').stop().slideToggle(270);
     });
 });
 

@@ -91,7 +91,7 @@
     <Content Include="Content\Custom.css" />
     <Content Include="Content\img\BinaryBackground.jpg" />
     <Content Include="Content\img\imgres.jpg" />
-    <Content Include="Content\img\menu.jpg" />
+    <Content Include="Content\img\menu-mobile.jpg" />
     <Content Include="Content\Scripts\Menubar.js" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

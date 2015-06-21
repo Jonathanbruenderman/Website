@@ -1,4 +1,4 @@
-﻿.menu #menu-inner {
+﻿.menu-mobile #menu-mobile-inner {
     width: 550px;
     height: 35px;
     font-size: 16px;
@@ -10,7 +10,7 @@
     border-radius: 8px;
 }
 
-.menu #menu-inner li { 
+.menu-mobile #menu-mobile-inner li { 
 display: inline;
 padding: 20px; 
 }

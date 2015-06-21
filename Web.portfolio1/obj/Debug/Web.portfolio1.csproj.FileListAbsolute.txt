@@ -85,3 +85,4 @@ C:\MySite\Website\Web.portfolio1\bin\System.Web.Helpers.xml
 C:\MySite\Website\Web.portfolio1\bin\System.Web.Mvc.xml
 C:\MySite\Website\Web.portfolio1\obj\Debug\Web.portfolio1.dll
 C:\MySite\Website\Web.portfolio1\obj\Debug\Web.portfolio1.pdb
+C:\MySite\Website\Web.portfolio1\obj\Debug\Web.portfolio1.csprojResolveAssemblyReference.cache
