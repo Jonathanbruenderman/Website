@@ -191,10 +191,6 @@
     #profile { width: auto; }
 }
 
-@media (max-width: 430px) {
-    #menu-mobile { width: 100%; }
-}
-
 #profile p {
     font-family: Arial, sans-serif;
     font-size: 12px;
@@ -211,6 +207,8 @@
     }
     #menu-mobile {
         margin-top: 40px; 
+        display: block;
+        width: 100%;
     }
 }
 
@@ -292,5 +290,11 @@ body {
     }
     #links {
         margin-left: 0;
+    }
+}
+
+@media (min-width: 430px) {
+    #menu-mobile {
+        display: none;
     }
 }
