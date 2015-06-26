@@ -1,5 +1,17 @@
 ﻿.mainRegion {
     width: 100%;
+    background: rgb(40, 52, 59); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(40, 52, 59, 1) 18%, rgba(72, 89, 107, 1) 50%, rgba(40, 52, 59, 1) 88%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(18%, rgba(40, 52, 59, 1)), color-stop(50%, rgba(72, 89, 107, 1)), color-stop(88%, rgba(40, 52, 59, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(40, 52, 59, 1) 18%, rgba(72, 89, 107, 1) 50%, rgba(40, 52, 59, 1) 88%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(40, 52, 59, 1) 18%, rgba(72, 89, 107, 1) 50%, rgba(40, 52, 59, 1) 88%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(40, 52, 59, 1) 18%, rgba(72, 89, 107, 1) 50%, rgba(40, 52, 59, 1) 88%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(40, 52, 59, 1) 18%, rgba(72, 89, 107, 1) 50%, rgba(40, 52, 59, 1) 88%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28343b', endColorstr='#28343b', GradientType=0);
+}
+
+.home {
+    width: 100%;
     height: 100%;
     background: rgb(40, 52, 59); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(40, 52, 59, 1) 18%, rgba(72, 89, 107, 1) 50%, rgba(40, 52, 59, 1) 88%); /* FF3.6+ */
@@ -103,7 +115,9 @@
 }
 
 #wrapper {
-    width: 100%;
+    width: 100%;    
+    height: 100%;
+
     background: rgb(24, 31, 35); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(24, 31, 35, 1) 10%, rgba(130, 140, 149, 1) 51%, rgba(130, 140, 149, 1) 51%, rgba(130, 140, 149, 1) 51%, rgba(130, 140, 149, 1) 51%, rgba(24, 31, 35, 1) 90%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(24, 31, 35, 1)), color-stop(51%, rgba(130, 140, 149, 1)), color-stop(51%, rgba(130, 140, 149, 1)), color-stop(51%, rgba(130, 140, 149, 1)), color-stop(51%, rgba(130, 140, 149, 1)), color-stop(90%, rgba(24, 31, 35, 1))); /* Chrome,Safari4+ */
@@ -170,12 +184,21 @@
     display: none;
 }
 
-#profile {
-    width: 600px;
-    height: 100vh;
-    background-color: transparent;
-    margin: auto;
+#profile_pic {
+    margin: 50px auto;
     align-self: center;
+    float: left;
+}
+
+#profile_description {
+    margin: 50px 100px;
+    float: left;
+}
+
+#content {
+    width: 50%;
+    height: 600px;
+    margin: 0 auto;
 }
 
 @media (max-width: 430px) {
@@ -188,17 +211,17 @@
         display: block;
     }
 
-    #profile { width: auto; }
+    #profile_pic { width: auto; }
 }
 
-#profile p {
+#profile_description p {
     font-family: Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
     color: white;
     text-align: center;
-    padding-top: 200px;
-}
+    padding: 50px 0;
+    margin: 0;}
 
 @media (max-width: 430px) {
     #menu-mobile-image1 img{
@@ -264,6 +287,14 @@ body {
     height: 100vh;
 }
 
+#profile_pic img {
+  max-width: 400px;
+  width: auto;
+  height: 430px;
+  margin: 50px auto;
+  border-radius: 140px;
+}
+
 @media (max-width: 430px) {
     #links_left, #links_center, #links_right {
         float: none;
@@ -291,6 +322,20 @@ body {
     #links {
         margin-left: 0;
     }
+    #content {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    #profile_pic {
+        float: none;
+    }
+
+    #profile_description {
+        float: none;
+        margin: 0 50px;
+    }
+
 }
 
 @media (min-width: 430px) {
