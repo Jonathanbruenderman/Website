@@ -141,10 +141,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Home\Resume.cshtml" />
-    <Content Include="Views\Home\Projects.cshtml" />
+    <Content Include="Views\Home\Testimonials.cshtml" />
     <Content Include="Views\Home\Apps.cshtml" />
-    <Content Include="Views\Home\ContactMe.cshtml" />
+    <Content Include="Views\Home\AboutMe.cshtml" />
     <Content Include="Views\Home\Links.cshtml" />
+    <Content Include="Scripts\jquery.validate.min.js.map">
+      <DependentUpon>jquery.validate.min.js</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

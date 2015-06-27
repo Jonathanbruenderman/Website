@@ -19,7 +19,7 @@ namespace Web.portfolio1.Controllers
             return View();
         }
 
-        public ActionResult Projects()
+        public ActionResult Testimonials()
         {
             return View();
         }
@@ -31,7 +31,7 @@ namespace Web.portfolio1.Controllers
         {
             return View();
         }
-        public ActionResult ContactMe()
+        public ActionResult AboutMe()
         {
             return View();
         }
