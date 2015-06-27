@@ -210,8 +210,6 @@
     margin: 0 auto;
 }
 
-
-
 #profile_description p {
     font-family: Arial, sans-serif;
     font-size: 20px;
@@ -292,22 +290,40 @@ body {
 }
 
 #picture_div {
-    float: left; 
-    height: 100%; 
+    float: left;  
     width: auto;
     padding: 50px;
 }
 
+#picture_div img {
+    border-radius: 15px;
+}
+
 #My_description {
     float: left;
-    max-width: 500px; 
+    max-width: 700px; 
 }
 
 #My_description p {
     color: #fff;
-    font-size: 20px; 
+    font-size: 28px; 
     font-family: Arial; 
     margin-top: 100px;
+}
+
+#sub-wrapper {
+    height: 100vh;
+}
+
+#viking {
+    max-width: 300px;
+    max-height: 300px; 
+    margin: 10px auto;
+}
+
+#viking img {
+    max-width: 300px;
+    max-height: 300px; 
 }
 
 
@@ -371,6 +387,22 @@ body {
     }
     body {
         height: 100%;
+    }
+    #picture_div {
+        padding: 50px 25px 0;
+    }
+    #picture_div img {
+        max-width: 300px;
+    }
+    #My_description {
+        margin: 40px;
+    }
+    #My_description p{
+        margin-top: 0;
+        font-size: 18px;
+    }
+    #viking {
+        display: none;
     }
     nav-header h2 { font-size: 18px; }
 
