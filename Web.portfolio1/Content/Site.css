@@ -199,7 +199,7 @@
 }
 
 #profile_description {
-    margin: 50px auto;
+    margin: 50px auto 0;
     float: left;
     width: 100%;
 }
@@ -210,16 +210,7 @@
     margin: 0 auto;
 }
 
-@media (max-width: 430px) {
-    #nav-header h2 { font-size: 18px; }
 
-    #menu-mobile-image img { display: none; }
-
-    #menu-mobile-image1 img {
-        width: 100%;
-        display: block;
-    }
-}
 
 #profile_description p {
     font-family: Arial, sans-serif;
@@ -300,6 +291,25 @@ body {
     margin-top: 0;
 }
 
+#picture_div {
+    float: left; 
+    height: 100%; 
+    width: auto;
+    padding: 50px;
+}
+
+#My_description {
+    float: left;
+    max-width: 500px; 
+}
+
+#My_description p {
+    color: #fff;
+    font-size: 20px; 
+    font-family: Arial; 
+    margin-top: 100px;
+}
+
 
 @media (max-width: 1515px) {
     #profile_description {
@@ -348,6 +358,8 @@ body {
     #menu-mobile-image1 img {
         position: absolute; 
         z-index: 1; 
+        width: 100%;
+        display: block;
     }
     #menu-mobile {
         margin-top: 40px; 
@@ -360,5 +372,9 @@ body {
     body {
         height: 100%;
     }
+    nav-header h2 { font-size: 18px; }
+
+    #menu-mobile-image img { display: none; }
+
 }
 
