@@ -95,15 +95,23 @@
     <Content Include="Content\img\seattle.jpg" />
     <Content Include="Content\img\WP_000460 %282%29.jpg" />
     <Content Include="Content\img\WWU.jpeg" />
+    <Content Include="Content\Scripts\app.js" />
+    <Content Include="Content\Scripts\game.js" />
+    <Content Include="Content\Scripts\grid\grid.js" />
+    <Content Include="Content\Scripts\grid\grid_directive.js" />
     <Content Include="Content\Scripts\Menubar.js" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\JonathanBruenderman %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\JonathanBruenderman %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\JonathanBruenderman.pubxml" />
+    <Content Include="Scripts\angular.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -150,6 +158,8 @@
     <Content Include="Scripts\jquery.validate.min.js.map">
       <DependentUpon>jquery.validate.min.js</DependentUpon>
     </Content>
+    <Content Include="Views\Home\mainApp.cshtml" />
+    <Content Include="Views\Home\grid.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
