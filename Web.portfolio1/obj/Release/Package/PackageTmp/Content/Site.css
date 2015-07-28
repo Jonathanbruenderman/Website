@@ -360,29 +360,37 @@ body {
         width: 80%;
         margin: 42px auto 0;
     }
+
     #page_links_left, #page_links_center, #page_links_right a {
-        font-size: 24px; 
+        font-size: 24px;
     }
+
     #title_left, #title_center, #title_right p {
-        font-size: 26px; 
+        font-size: 26px;
     }
+
     #name_links {
         width: auto;
     }
+
     #menu {
         display: none;
     }
+
     #nav-header {
         height: 40px;
     }
+
     #links {
         margin-left: 0;
     }
+
     #content {
         margin: 0;
         width: 100%;
         height: auto;
     }
+
     #profile_pic {
         float: none;
     }
@@ -391,46 +399,64 @@ body {
         float: none;
         margin: 0 auto;
     }
+
     #menu-mobile-image1 img {
-        position: absolute; 
-        z-index: 1; 
+        position: absolute;
+        z-index: 1;
         width: 100%;
         display: block;
     }
+
     #menu-mobile {
-        margin-top: 40px; 
+        margin-top: 40px;
         width: 100%;
     }
+
     #profile_pic img {
         max-width: 319px;
         height: 410px;
     }
+
     body {
         height: 100%;
     }
+
     #picture_div {
         padding: 50px 25px 0;
     }
-    #picture_div img {
-        max-width: 300px;
-    }
+
+        #picture_div img {
+            max-width: 300px;
+        }
+
     #My_description {
         margin: 40px;
     }
-    #My_description p{
-        margin-top: 0;
-        font-size: 18px;
-    }
+
+        #My_description p {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
     #viking {
         display: none;
     }
-    nav-header h2 { font-size: 18px; }
 
-    #menu-mobile-image img { display: none; }
+    nav-header h2 {
+        font-size: 18px;
+    }
+
+    #menu-mobile-image img {
+        display: none;
+    }
 
     #center {
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    ul{
+        padding-left: 20px;
     }
 
 }
